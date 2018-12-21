@@ -1,0 +1,493 @@
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+
+<style>
+
+.widget-search-wrapper {
+  font-family: 'Roboto', sans-serif;
+  background: transparent;
+  height: auto !important;
+}
+
+.widget-search {
+  border: none;
+  width: 100%;
+  padding-top: 0.25rem;
+}
+
+.widget-search select, .widget-search .button {
+  border-radius: 0px !important;
+  border: none;
+}
+
+#inv-search-widget select {
+  background-color: #ed1c24;
+  color: white;  
+}
+
+#project-container {
+  font-family: 'Roboto', sans-serif;
+}
+
+#project-container h1,
+#project-container h2,
+#project-container h3,
+#project-container main,
+#project-container p {
+  font-family: 'Roboto', sans-serif;
+  text-transform: none;
+}
+
+#search-widget-container {
+  position: relative;
+}
+
+#quick-links-section {
+  margin-top: 2rem;
+}
+
+.quick-links-card {
+  margin: 1rem 1rem 2rem 1rem;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.quick-links-card:hover {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.quick-links-img {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  margin-bottom: 1rem;
+}
+
+.quick-links-card h2 {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #707070;
+}
+
+.quick-links-card h3 {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #707070;
+}
+
+.new-inv-btn span,
+.used-inv-btn span {
+  padding-right: 0.25rem;
+}
+
+.padding-box {
+  padding: 2rem 1.5rem;
+}
+
+.image-sections main {
+  background: rgba(255,255,255,0.85);
+  padding: 1rem;
+  color: #333;
+}
+
+.h2-line1,
+.h2-line2 {
+  color: #707070;
+}
+
+.h2-line1 {
+  text-transform: none;
+}
+
+.h2-line2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.red-row {
+  background: #ec2f35;
+  padding: 2rem 0;
+}
+
+#map-section h2,
+#map-section h3 {
+  color: #fff;
+  text-align: center;
+}
+
+#map-section h2 {
+  font-weight: bold;
+  text-transform: none;
+  font-size: 1.5rem;
+}
+
+#map-section h3 {
+  font-size: 1rem;
+}
+
+#map-container {
+  background: #fff;
+}
+
+#map-img {
+  opacity: 1;
+  height: 0;
+  padding-bottom: 35.6%;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+#map-img:hover {
+  opacity: 0.75;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.black-row {
+  background: #000;
+  color: #fff;
+}
+
+#sequoia-img {
+  width: 100%;
+  height: 0;
+  padding-bottom: 33.25%
+}
+
+#trusted-dealer-section main {
+  padding: 1.5rem 1rem;
+}
+
+#trusted-dealer-section h2 {
+  font-weight: bold;
+}
+
+
+
+
+/* Foundation Breakpoints */
+
+/* Small only (below 640px) */
+@media screen and (max-width: 39.9375em) {
+
+  #header-img-sm {
+    background: url(https://s3.amazonaws.com/fzautomotive/dealers/5b69df3de14cf.jpg) no-repeat center; /* 640 x 289 */
+    background-size: cover;
+    width: 100%;
+    height: 0;
+    padding-bottom: 45.16%;
+  }
+
+  .widget-search-wrapper {
+    position: relative;
+  }
+
+  .home-message h1 {
+    color: #000;
+    text-align: center !important;
+  }
+
+  #new-link-img {
+    background: url(https://s3.amazonaws.com/fzautomotive/dealers/5b6a2d4b20cb3.png) no-repeat center; /* 320 x 320 */
+    background-size: cover;
+  }
+
+  #used-link-img {
+    background: url(https://s3.amazonaws.com/fzautomotive/dealers/5b6a353720ace.png) no-repeat center; /* 320 x 320 */
+    background-size: cover;
+  }
+
+  #service-link-img {
+    background: url(https://s3.amazonaws.com/fzautomotive/dealers/5b6a343fdaf5d.png) no-repeat center; /* 320 x 320 */
+    background-size: cover;
+  }
+
+  #value-trade-link-img {
+    background: url(https://s3.amazonaws.com/fzautomotive/dealers/5b6a3770e704e.png) no-repeat center; /* 320 x 320 */
+    background-size: cover;
+  }
+
+  #welcome-section {
+    background: url(https://s3.amazonaws.com/fzautomotive/dealers/5b6a4bf065441.jpg) no-repeat center; /* 640 x 505 */
+    background-size: cover;
+  }
+
+  #map-img {
+    background: url(https://s3.amazonaws.com/fzautomotive/dealers/5b6b2aeed4317.jpg) no-repeat center; /* 640 x 228 */
+    background-size: cover;
+  }
+
+  #sequoia-img {
+    background: url(https://s3.amazonaws.com/fzautomotive/dealers/5b6b3882a8358.jpg) no-repeat center; /* 640 x 213 */
+    background-size: cover;
+  }
+
+  #service-section {
+    background: url(https://s3.amazonaws.com/fzautomotive/dealers/5b6b60d92b45b.jpg) no-repeat center; /* 640 x 505 */
+    background-size: cover;
+  }
+
+}
+
+/* Medium and up (above 640px) */
+@media screen and (min-width: 40em) {
+
+  .widget-search-wrapper {
+    width: 75%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+
+  .home-message h1 {
+    text-align: left;
+    font-size: 1.6rem;
+  }
+
+  .image-sections main {
+    padding: 2rem;
+  }
+
+  .h2-line1 {
+    font-size: 1.7rem;
+  }
+
+  .h2-line2 {
+    font-size: 2rem;
+  }
+
+  #trusted-dealer-section main {
+    padding: 1.5rem 2rem;
+  }
+
+  #trusted-dealer-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+}
+
+/* Medium only (between 640px and 1024px) */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+
+  #header-img-lg {
+    background: url(https://s3.amazonaws.com/fzautomotive/dealers/5b6cae6a92977.jpg) no-repeat center; /* 1024 x 462 */
+    /*background: url(https://s3.amazonaws.com/fzautomotive/dealers/5b6a0fa383d98.jpg) no-repeat center;*/ /* 1024 x 462 non-shaded*/
+    background-size: cover;
+    width: 100%;
+    height: 0;
+    padding-bottom: 45.16%;
+  }
+
+  #new-link-img {
+    background: url(https://s3.amazonaws.com/fzautomotive/dealers/5b6a2d875fca6.png) no-repeat center; /* 256 x 256 */
+    background-size: cover;
+  }
+
+  #used-link-img {
+    background: url(https://s3.amazonaws.com/fzautomotive/dealers/5b6a357d71c68.png) no-repeat center; /* 256 x 256 */
+    background-size: cover;
+  }
+
+  #service-link-img {
+    background: url(https://s3.amazonaws.com/fzautomotive/dealers/5b6a347ac9d2c.png) no-repeat center; /* 256 x 256 */
+    background-size: cover;
+  }
+
+  #value-trade-link-img {
+    background: url(https://s3.amazonaws.com/fzautomotive/dealers/5b6a378f8f63b.png) no-repeat center; /* 256 x 256 */
+    background-size: cover;
+  }
+
+  #welcome-section {
+    background: url(https://s3.amazonaws.com/fzautomotive/dealers/5b6a4c69630c1.jpg) no-repeat center; /* 1024 x 404 */
+    background-size: cover;
+  }
+
+  #map-img {
+    background: url(https://s3.amazonaws.com/fzautomotive/dealers/5b6b2b4dd967c.jpg) no-repeat center; /* 1024 x 365 */
+    background-size: cover;
+  }
+
+  #sequoia-img {
+    background: url(https://s3.amazonaws.com/fzautomotive/dealers/5b6b36ca85f34.jpg) no-repeat center; /* 1024 x 340 */
+    background-size: cover;
+  }
+
+  #service-section {
+    background: url(https://s3.amazonaws.com/fzautomotive/dealers/5b6b6104a1bf6.jpg) no-repeat center; /* 1024 x 404 */
+    background-size: cover;
+  }
+
+}
+
+/* Large and up (above 1024px) */
+@media screen and (min-width: 64em) {
+
+  #header-img-lg {
+    margin-top: 111px;
+    background: url(https://s3.amazonaws.com/fzautomotive/dealers/5b6caeafefa74.jpg) no-repeat center; /* 2500 x 1129 */
+    /*background: url(https://s3.amazonaws.com/fzautomotive/dealers/5b6a10e7dbc1d.jpg) no-repeat center;*/ /* 2500 x 1129 non-shaded */
+    background-size: cover;
+    width: 100%;
+    height: 0;
+    padding-bottom: 45.16%;
+  }
+
+  #quick-links-section {
+    margin-top: 3rem;
+  }
+
+  .quick-links-card {
+    margin-bottom: 3rem;
+  }
+
+  #new-link-img {
+    background: url(https://s3.amazonaws.com/fzautomotive/dealers/5b6a2e5d7447a.png) no-repeat center; /* 360 x 360 */
+    background-size: cover;
+  }
+
+  #used-link-img {
+    background: url(https://s3.amazonaws.com/fzautomotive/dealers/5b6a35a4afcf0.png) no-repeat center; /* 360 x 360 */
+    background-size: cover;
+  }
+
+  #service-link-img {
+    background: url(https://s3.amazonaws.com/fzautomotive/dealers/5b6a349c20e72.png) no-repeat center; /* 360 x 360 */
+    background-size: cover;
+  }
+
+  #value-trade-link-img {
+    background: url(https://s3.amazonaws.com/fzautomotive/dealers/5b6a37b24e7fa.png) no-repeat center; /* 360 x 360 */
+    background-size: cover;
+  }
+
+  .quick-links-card h2 {
+    font-size: 1.4rem;
+  }
+
+  .image-sections {
+    position: relative;
+    height: 0;
+    padding-bottom: 39.42%;
+  }
+
+  #welcome-section {
+    background: url(https://s3.amazonaws.com/fzautomotive/dealers/5b6a4ca27a5c0.jpg) no-repeat center; /* 1440 x 568 */
+    background-size: cover;
+  }
+
+  .padding-box {
+    padding: 0;
+    position: absolute;
+    top: 15%;
+    bottom: 0;
+    width: 45%;
+  }
+
+  .padding-box-right {
+    left: 50%;
+  }
+
+  .padding-box-left {
+    right: 50%;
+  }
+
+  .image-sections main {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 1rem;
+  }
+
+  .h2-line1 {
+    font-size: 1.5rem;
+  }
+
+  .h2-line2 {
+    font-size: 1.75rem;
+  }
+
+  .image-sections main p {
+    font-size: 0.9rem;
+  }
+
+  #map-img {
+    background: url(https://s3.amazonaws.com/fzautomotive/dealers/5b6b2b94b7f6d.jpg) no-repeat center; /* 1207 x 430 */
+    background-size: cover;
+  }
+
+  #sequoia-img {
+    background: url(https://s3.amazonaws.com/fzautomotive/dealers/5b6b37036db5c.jpg) no-repeat center; /* 720 x 239 */
+    background-size: cover;
+  }
+
+  #trusted-dealer-section main {
+    padding: 1.5rem 1rem 0 2rem;
+  }
+
+  #trusted-dealer-section p {
+    font-size: 0.9rem;
+  }
+
+  #service-section {
+    background: url(https://s3.amazonaws.com/fzautomotive/dealers/5b6b6127349f1.jpg) no-repeat center; /* 1440 x 568 */
+    background-size: cover;
+  }
+
+}
+
+/* Large only (between 1024px and 1200px) */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
+
+/* Extra Large (1200px and up) */
+@media screen and (min-width: 1200px) {
+
+  .h2-line1 {
+    font-size: 1.7rem;
+  }
+
+  .h2-line2 {
+    font-size: 2rem;
+  }
+
+  .image-sections main p {
+    font-size: 1rem;
+  }
+
+}
+
+/* Extra Large (1200px and up) */
+@media screen and (max-width: 1440px) {
+
+  .footer {
+    margin-top: 0;
+  }
+
+}
+
+/* 1275px and up */
+@media screen and (min-width: 1200px) {
+
+  #header-img-lg {
+    margin-top: 100px;
+  }
+
+}
+
+</style>
